@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'my Website';
-  slideImages = ['ph1.png', 'ph2.jpg', 'ph3.png'];
+  slideImages = ['ph1.png', 'ph3.png', 'ph2.jpg'];
+  headlines = ['Bring engineering to the next level', 'Born to code', 'Head up to lerning'];
   currentImage = 0;
   showImage = true;
 
