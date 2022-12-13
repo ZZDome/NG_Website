@@ -1,10 +1,12 @@
 <header class="menu">
-    <div class="logo">
+    <div [class.logoDark]="!darkMode" routerLink="/" class="logo">
         <p>01000100</p>
         <p>01010111</p>
     </div>
-    <a href="#">Link1</a>
-    <a href="#">Link2</a>
-    <a href="#">Link3</a>
-    <a href="#">Link4</a>
+    <div [class.linksDark]="!darkMode" class="links">
+        <a routerLink="/">Home</a>
+        <a href="#">Curriculum</a>
+        <a href="#">Projects</a>
+        <a routerLink="/imprint">Imprint</a>
+    </div>
 </header>

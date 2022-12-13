@@ -6,17 +6,27 @@
     height: 10vh
     display: flex
     align-items: center
+    justify-content: space-between
     z-index: 1
+    padding-left: 120px
+    padding-right: 120px
     background-color: #27105c4d
 
+.links
     a
         margin-left: 60px
-        color: rgba(214, 214, 214, 0.5)
+        color: rgba(255, 255, 255, 1)
         text-decoration: none
-        font-size: 40px
+        font-size: 30px
         &:hover
-            text-decoration: underline
-            color: white
+            text-decoration: none
+            color: rgba(214, 214, 214, 0.5)
+
+.linksDark
+    a
+        color: #000000
+        &:hover
+            color: rgba(41, 41, 41, 0.5)
 
 .logo
     height: 60px
@@ -30,10 +40,19 @@
     padding-left: 8px
     padding-right: 8px
     &:hover
-            cursor: pointer
-
+        cursor: pointer
+        border: 3px solid rgba(214, 214, 214, 0.5)
+        p
+            color: rgba(214, 214, 214, 0.5)
     p
         color: white
         margin: 0 
-        &:hover
-            cursor: pointer
+
+.logoDark
+    border: 3px solid black
+    &:hover
+        border: 3px solid rgba(41, 41, 41, 0.5)
+        p
+            color: rgba(41, 41, 41, 0.5)
+    p
+        color: black
